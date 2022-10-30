@@ -1,0 +1,9 @@
+Logo de login
+
+SINGUP => crearte usuario escuchar por v-model / objeto y array
+
+LOGIN => Filtrar para escuchar el objeto por email, password si es igual => mensaje bienvenido a la pagina
+
+Index => se modifica el nombre de usuario  
+
+nombre => dropdow +info y cerrar sesion => se escucha un cambio => vuelve icono
