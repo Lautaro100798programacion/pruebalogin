@@ -12,11 +12,11 @@
 
 <body>
     <header>
-        <h1>Prueba Login</h1>
+        <h1>Nueva Cuenta</h1>
     </header>
     <main>
         <div id="app">
-            <h2>Formulario</h2>
+            <h2>Creacion de cuenta</h2>
             {{usuarios}}
             <form action="" @submit.prevent="objeto">
                 <div class="mb-3 col-3">
@@ -34,6 +34,11 @@
                     <input v-model="usuarios.contrasena" type="password" class="form-control" id="contraseña"
                         placeholder="contraseña">
                 </div>
+                <div class="mb-3 col-3">
+                    <label for="palabraclave" class="form-label">Elija una palabra clave de recuperación</label>
+                    <input v-model="usuarios.palabraderecuperacion" type="text" class="form-control" id="palabraclave"
+                        placeholder="palabraclave">
+                </div>
                 <div class="col-auto">
                     <button type="submit" class="btn btn-primary mb-3">Ingresar</button>
                 </div>
@@ -43,8 +48,7 @@
     <footer>
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
     </script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="/js/main.js"></script>
