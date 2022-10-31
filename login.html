@@ -16,22 +16,22 @@
     </header>
     <main>
         <div id="app">
-            <h2>Formulario</h2>
-            {{usuarios}}
+            <h2>Login</h2>
+            {{login}}
             <form action="" @submit.prevent="objeto">
                 <div class="mb-3 col-3">
                     <label for="nombredeusuario" class="form-label">Ingrese su nombre de usuario</label>
-                    <input v-model="usuarios.nombre" type="text" class="form-control" id="nombredeusuario"
+                    <input v-model="login.nombre" type="text" class="form-control" id="nombredeusuario"
                         placeholder="usario">
                 </div>
                 <div class="mb-3 col-3">
                     <label for="correo" class="form-label">Ingrese su correo electronico</label>
-                    <input v-model="usuarios.email" type="email" class="form-control" id="correo"
+                    <input v-model="login.email" type="email" class="form-control" id="correo"
                         placeholder="name@example.com">
                 </div>
                 <div class="mb-3 col-3">
                     <label for="contraseña" class="form-label">Elija una contraseña</label>
-                    <input v-model="usuarios.contrasena" type="password" class="form-control" id="contraseña"
+                    <input v-model="login.contrasena" type="password" class="form-control" id="contraseña"
                         placeholder="contraseña">
                 </div>
                 <div class="col-auto">

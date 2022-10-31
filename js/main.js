@@ -3,12 +3,17 @@ const { createApp } = Vue
  createApp({
     data() {
       return {
-        usuarios: [
-            {nombre: '',
-            email: '',
-            contraseña: '',  
-        }
-        ]
+        usuarios:
+            {nombre: [],
+            email: [],
+            contrasena: [],  
+        },
+        registrados: [],
+        login:
+        {nombre: [],
+          email: [],
+          contrasena: [],  
+        },
 
       }
     },
@@ -21,7 +26,11 @@ const { createApp } = Vue
     },
     //funciones
     methods: {
-
+      objeto() {
+        this.registrados.push(this.usuarios)
+        // console.log(this.registrados)
+      }
+      
     },
 
     computed: {
